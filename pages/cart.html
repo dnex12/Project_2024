@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/headerNav.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+    
+    <title>One Stop Hotwheels | Cart</title>
+    
+
+</head>
+
+<body>
+    <body style="background-color: #FFFAEF;">
+    </body>
+    <header>
+        <h1>
+            <span>ONE STOP</span>
+            <span>HOTWHEELS</span>
+        </h1>
+        <nav id="navbar">
+            <ul>
+                
+                <li><a href="../shop.html">Items</a></li>
+                <li> <a href="../pages/cart.html" class="cart-button">Cart<span class="cart-number"></span>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="cart-section">
+        <h1>Your Cart</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Item Price</th>
+                    <th>Quantity</th>
+                    <th>Total Cost</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody class="cart-items">
+                <!-- add to cart item -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Grand Total</td>
+                    <td class="grand-total">₱</td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="5" class="text-right">
+                       <button class="buy-btn" onclick="redirectToPayment()" >Buy</button>
+                    </td>
+                 </tr>
+            </tfoot>
+        </table>
+    </div>
+
+   
+    <script src="../script/NavbarScrollingUpdate.js"></script>
+    <script src="../script/cart.js"></script>
+   
+</body>
+
+</html>

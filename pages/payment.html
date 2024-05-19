@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/payment.css">
+    <link rel="stylesheet" href="../css/headerNav.css">
+    
+    <title>One Stop Hotwheels | Payment</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="../shop.html">Home</a></li>
+            </ul>
+        </nav>  
+
+        <h1>Payment</h1>
+        
+    </header>
+    <main>
+
+        <h1>Payment</h1>
+        <p>Total Amount: <span id="grand-total"></span></p>
+        <!-- Your payment form elements go here -->
+
+        <form id="payment-form">
+            <h2>Enter Your Details</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>  
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <h2>Select Payment Method</h2>
+            <div class="form-group">
+                <label for="cash-on-delivery">Cash on Delivery</label>
+                <input type="radio" id="cash-on-delivery" name="payment-method" value="cash-on-delivery" required>
+            </div>
+
+            <div class="form-group payment-methods">
+                <div class="payoption">
+                    <label for="gcash">Gcash</label>
+                    <img src="../assets/gcash.png" alt="Pay via Gcash" class="payment-method">
+                    <input type="radio" id="gcash" name="payment-method" value="gcash" required>
+                </div>
+                <div class="payoption">
+                    <label for="paymaya">Paymaya</label>
+                    <img src="../assets/paymaya.png" alt="Pay via Paymaya" class="payment-method">
+                    <input type="radio" id="paymaya" name="payment-method" value="paymaya" required>
+                </div>
+            </div>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </main>
+    <footer>
+        <script src="../script/payment-validation.js"></script>
+        <script src="../script/cart.js"></script>
+        <script src="../script/display-total.js"></script>
+    </footer>
+</body>
+
+</html>

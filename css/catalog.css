@@ -1,0 +1,125 @@
+/* catalog.css */
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #030629; 
+    z-index: 1000; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+section h2{
+    margin-top: 24px;
+    margin-bottom: 0;
+    padding: 16px;
+    text-align: center;
+ }
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.car-item {
+    border: 3px solid #ecdf6a;
+    background-color: #f1f1ee;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    flex-basis: 35%;
+}
+
+.car-item img {
+    max-width: 100%;
+}
+
+.car-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #030629;
+}
+
+.add-cart {
+    background-color: #F2A929;
+    color: #fff;
+    border: 2px solid #d3ac68;
+    padding: 8px 12px;
+    border-radius: 10px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family:'Montserrat', sans-serif;
+}
+
+
+.add-cart:hover{
+    background-color: #fff;
+    color: #000000;
+
+}
+
+.item-added-pop-up {
+    display: inline-block;
+    opacity: 0;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    border-radius: 8px 8px;
+    background-color: #F2A929;
+    color: white;
+    position:relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.buy-button {
+    background-color: #F2A929;
+    color: #fff;
+    border: 2px solid #d3ac68;
+    padding: 8px 12px;
+    border-radius: 8px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buy-button:hover {
+    background-color: #fff;
+    color: #000000;
+}
+
+@media (max-width: 750px) {
+    .car-item {
+        flex-basis: 60%;
+    }
+    .buy-button, .add-cart {
+       font-size: 14px;
+    }
+    
+   
+}
+
+@media (max-width: 480px) {
+    .car-item {
+        flex-basis: 100%;
+    }
+    .buy-button, .add-cart {
+       font-size: 14px;
+    }
+    
+   
+}
